@@ -150,7 +150,10 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
   h5 { font-size: 2.4rem; }
   h6 { font-size: 1.5rem; }
 }
-
+	body {
+	background-color: #0A0030; 
+	color: #996600;	}
+	
 p {
   margin-top: 0; }
 
@@ -163,7 +166,7 @@ a:hover {
   color: #0FA0CE; }
 
 
-/* Buttons
+/* Buttons {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .button,
 button,
@@ -312,7 +315,7 @@ code {
   font-size: 90%;
   white-space: nowrap;
   background: #F1F1F1;
-  border: 1px solid #E1E1E1;
+  border: 1px solid #1E00E1;
   border-radius: 4px; }
 pre > code {
   display: block;
@@ -324,8 +327,8 @@ pre > code {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 th, td {
   padding: 12px 15px;
-  text-align: justify;
-  border-bottom: 1px solid #E1E1E1; }
+  text-align: center;
+  border: 3px solid #996600; }
 th:first-child,
 td:first-child {
   padding-left: 0; }
