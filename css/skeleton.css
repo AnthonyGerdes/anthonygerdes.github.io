@@ -322,10 +322,9 @@ pre > code {
 
 /* Tables
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-th,
-td {
+th, td {
   padding: 12px 15px;
-  text-align: left;
+  text-align: justify;
   border-bottom: 1px solid #E1E1E1; }
 th:first-child,
 td:first-child {
@@ -333,7 +332,6 @@ td:first-child {
 th:last-child,
 td:last-child {
   padding-right: 0; }
-
 
 /* Spacing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -362,7 +360,7 @@ form {
 .u-full-width {
   width: 100%;
   box-sizing: border-box; }
-.u-75-width {
+.u-85-width {
 	width: 85%;
   box-sizing: border-box; }	
 .u-max-full-width {
@@ -372,7 +370,12 @@ form {
   float: right; }
 .u-pull-left {
   float: left; }
-
+.u-footer {
+	position: fixed;
+    bottom: 0;
+    width: 100%;
+	padding: 20px
+	
 
 /* Misc
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
