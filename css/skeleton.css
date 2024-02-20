@@ -378,8 +378,11 @@ form {
     bottom: 0;
     width: 100%;
 	padding: 20px
-	
-
+}
+.imagebullshit {
+    width: 30%
+    margin-left: 25%
+}
 /* Misc
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 hr {
