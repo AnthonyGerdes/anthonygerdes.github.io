@@ -1,87 +1,165 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<html lang="en">
+<head>
   <meta charset="utf-8">
   <title>Anthony Gerdes' Personal Website</title>
   <meta name="description" content="My Public-facing portfolio website">
   <meta name="author" content="Anthony Gerdes">
 
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Content Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
   <meta property="og:type" content="website">
   <meta property="og:title" content="Anthony Gerdes' Personal Website">
   <meta property="og:description" content="Here, you'll find my resume, and publically available projects.">
   <meta name="msapplication-tap-highlight" content="no">
   <meta http-equiv="Cache-control" content="public" max-age="86400">
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
-<style>
-        img {
-            max-width: 100%; /* Image will not be larger than the container */
-            height: auto;    /* Maintain aspect ratio */
-            display: block;  /* Remove any extra space caused by inline elements */
-        }
-    </style>
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="css/site.css">
 
+  <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
-<div class="u-full-width">
-		<img src="images/myself.png" alt="An Image of Myself" align="top" height="10%" width="10%">
-		<p> Contact Information: <br>
-		Email: <a href="mailto:AnthonyGerdes@proton.me">AnthonyGerdes@proton.me</a> <br>
-		Phone (Call Only): <a href="tel:+17208155494" (720)="" 815-5494=""> (720) 815-5494‬</a><br>‬LinkedIn: <a href="https://www.linkedin.com/in/anthonygerdes/">https://www.linkedin.com/in/anthonygerdes/</a><br>
-		Permanent link to my Website: <a href="https://anthonygerdes.github.io/">https://anthonygerdes.github.io/</a>
-		
-	</p></div>
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<div class="container">
-    <div class="row">
-      <div class="three-quarters-column" style="margin-top: 10%">
-        <h4>My Portfolio</h4>
-	<iframe src="docs/Anthony_Gerdes_Resume.pdf" width="1000" height="1420" style="border:none" title="My Resume"></iframe>
-        <ul>
-				<li> My Qualifications:</li>
-				<ul>AAS - Cybersecurity</ul>
-					<ul><img src="images/ACC_AAS_Cybersecurity.png"></ul>
-				<ul>AAS - General Networking</ul>
-					<ul><img src="images/AAS_GenNetworking.png"></ul>
-				<ul>CNT - Cisco</ul>
-					<ul><img src="images/ACC_Certificate.jpg"></ul>
-				
+  <script>
+    /* Dark is the default. A saved choice from the toggle wins. */
+    (function () {
+      var theme = "dark";
+      try {
+        if (localStorage.getItem("theme") === "light") { theme = "light"; }
+      } catch (e) {}
+      document.documentElement.setAttribute("data-theme", theme);
+    })();
+  </script>
 
-				
-	</ul>
-		
-	<!-- Easily substitute any <ul> or an <ol> to get number lists or sublists. Skeleton doesn't support lists nested deeper than 2 levels -->
-		</div>
-	</div>
-	
-</div>
-
-<footer>
-    <div class="u-footer">
-        <p>© Anthony Gerdes, August 2025. <a href="LICENSE" target="_blank">Licensed under GNU GPLv3</a></p>
+  <header class="topbar">
+    <div class="wrap">
+      <a class="brand" href="#top">Anthony Gerdes</a>
+      <nav class="nav" aria-label="Page sections">
+        <a href="#contact">Contact</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#qualifications">Qualifications</a>
+        <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch to light mode">Light mode</button>
+      </nav>
     </div>
-</footer>
+  </header>
 
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <section class="hero" id="top">
+    <div class="wrap">
+      <img class="portrait" src="images/myself.png" alt="An Image of Myself" width="176" height="176">
+      <div>
+        <h1>Anthony Gerdes</h1>
+        <p>Personal Website</p>
+      </div>
+    </div>
+  </section>
 
+  <main class="wrap">
 
-</body></html>
+    <section class="card" id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact Information</h2>
+      <dl class="contact-list">
+        <div class="contact-item">
+          <dt>Email</dt>
+          <dd><a href="mailto:AnthonyGerdes@proton.me">AnthonyGerdes@proton.me</a></dd>
+        </div>
+        <div class="contact-item">
+          <dt>Phone (Call Only)</dt>
+          <dd><a href="tel:+17208155494">(720) 815-5494</a></dd>
+        </div>
+        <div class="contact-item">
+          <dt>LinkedIn</dt>
+          <dd><a href="https://www.linkedin.com/in/anthonygerdes/">https://www.linkedin.com/in/anthonygerdes/</a></dd>
+        </div>
+        <div class="contact-item">
+          <dt>Permanent link to my Website</dt>
+          <dd><a href="https://anthonygerdes.github.io/">https://anthonygerdes.github.io/</a></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="card" id="portfolio" aria-labelledby="portfolio-title">
+      <h2 id="portfolio-title">My Portfolio</h2>
+      <div class="resume-bar">
+        <a class="button" href="docs/Anthony_Gerdes_Resume.pdf" target="_blank" rel="noopener">Open resume as PDF</a>
+      </div>
+      <iframe class="resume-frame" src="docs/Anthony_Gerdes_Resume.pdf" title="My Resume"></iframe>
+    </section>
+
+    <section class="card" id="qualifications" aria-labelledby="qualifications-title">
+      <h2 id="qualifications-title">My Qualifications</h2>
+      <ul class="qual-grid">
+        <li class="qual-wide">
+          <figure class="qual qual-pending">
+            <div class="placeholder" role="img" aria-label="Placeholder for the future Bachelors of Science diploma image">
+              <span>Image coming soon</span>
+            </div>
+            <figcaption>
+              <span class="badge">Coming soon</span>
+              Bachelors of Science - CIS: Cybersecurity
+              <span class="meta">Expected graduation: <time datetime="2026-12-22">December 22, 2026</time></span>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure class="qual">
+            <a class="thumb" href="images/ACC_AAS_Cybersecurity.png" target="_blank" rel="noopener">
+              <img src="images/ACC_AAS_Cybersecurity.png" alt="Associate of Applied Science in Cybersecurity diploma" loading="lazy">
+            </a>
+            <figcaption>AAS - Cybersecurity</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure class="qual">
+            <a class="thumb" href="images/AAS_GenNetworking.png" target="_blank" rel="noopener">
+              <img src="images/AAS_GenNetworking.png" alt="Associate of Applied Science in General Networking diploma" loading="lazy">
+            </a>
+            <figcaption>AAS - General Networking</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure class="qual">
+            <a class="thumb" href="images/ACC_Certificate.jpg" target="_blank" rel="noopener">
+              <img src="images/ACC_Certificate.jpg" alt="Cisco networking certificate" loading="lazy">
+            </a>
+            <figcaption>CNT - Cisco</figcaption>
+          </figure>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>&copy; Anthony Gerdes, August 2025. <a href="LICENSE" target="_blank">Licensed under GNU GPLv3</a></p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var root = document.documentElement;
+      var button = document.getElementById("theme-toggle");
+
+      function refresh() {
+        var dark = root.getAttribute("data-theme") !== "light";
+        button.textContent = dark ? "Light mode" : "Dark mode";
+        button.setAttribute("aria-label", dark ? "Switch to light mode" : "Switch to dark mode");
+      }
+
+      button.addEventListener("click", function () {
+        var next = root.getAttribute("data-theme") === "light" ? "dark" : "light";
+        root.setAttribute("data-theme", next);
+        try { localStorage.setItem("theme", next); } catch (e) {}
+        refresh();
+      });
+
+      refresh();
+    })();
+  </script>
+
+</body>
+</html>
